@@ -17,7 +17,16 @@ describe("The question list", () => {
     afterAll(() => {
         console.log("After all!")
     });
-    
+    // it.only would isolate the test. You can run multiple isolated tests using "only" simulatentously
+    // it.only ("should display a list of items", () => {
+    //     expect(40+2).toEqual(42);
+    // });
+
+    // it.skip allows Jest to skip over a test
+    it.skip ("should be the meaning of life", () => {
+        expect(40+2).toEqual(43);
+    });
+
     it ("should display a list of items", () => {
         expect(40+2).toEqual(42);
     });
