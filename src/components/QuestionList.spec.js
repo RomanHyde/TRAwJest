@@ -10,6 +10,14 @@ describe("The question list", () => {
         console.log("Before all!")
     });
 
+    afterEach(() => {
+        console.log("After each!")
+    });
+
+    afterAll(() => {
+        console.log("After all!")
+    });
+    
     it ("should display a list of items", () => {
         expect(40+2).toEqual(42);
     });
